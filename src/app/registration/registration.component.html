@@ -1,0 +1,51 @@
+<h1><u>
+    Candidate Registration Form
+</u></h1>
+
+<form #addMountForm="ngForm" (ngSubmit)="submit(addMountForm)">
+  <div>
+    <label for="name">Name :</label><br>
+     <input type="text" [(ngModel)]="name" name="name">
+      </div>
+  <div>
+    <label for="father's name">Father's Name :</label><br>
+     <input type="text"[(ngModel)]="fatherName" name="father">
+      </div>    
+  <div>
+    <label for="mother's name">Mother's Name :</label><br>
+     <input type="text" [(ngModel)]="motherName" name="mother">
+      </div>
+  <div>
+    <label for="nationality">Nationality :</label><br>
+      <input type="text" [(ngModel)]="nationality" name="nation">
+        </div>
+  <div>
+    <label for="contact">Contact :</label><br>
+    <input type="number" [(ngModel)]="contact" name="contact">
+      </div>
+  <div>
+    <label for="email">Email :</label><br>
+    <input type="email" [(ngModel)]="email" name="mail">
+      </div>
+  <div>
+    <label for="dateofirth">Date Of Birth :</label><br>
+    <input type="date" [(ngModel)]="dateOfBirth" name="dob">
+      </div>    
+  <div>
+    <label for="10thpercentage or CGPA">10th(Percentage or CGPA) :</label><br>
+    <input type="text" [(ngModel)]="percentageTen" name="ten">
+      </div>
+  <div>
+    <label for="12th percentage">12th Percentage :</label><br>
+    <input type="text" [(ngModel)]="percentageTwelve" name="twelve">
+      </div>
+  <div>
+    <label for="department">Department :</label><br>
+    <input type="text" [(ngModel)]="department" name="department">
+      </div>
+  <div>
+    <label for="hobbies">Hobbies :</label><br>
+    <input type="text" [(ngModel)]="hobbie" name="hoby">
+      </div>     
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>

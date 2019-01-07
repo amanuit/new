@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import{ FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
@@ -11,8 +12,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CseComponent } from './cse/cse.component';
 import { ITComponent } from './it/it.component';
 import { CivilComponent } from './civil/civil.component';
-
-
+import { RegistrationComponent } from './registration/registration.component';
+import { ShowdataComponent } from './showdata/showdata.component';
+import { DataService } from './data.service';
+import { AmanComponent } from './aman/aman.component';
 
 @NgModule({
   declarations: [
@@ -24,21 +27,31 @@ import { CivilComponent } from './civil/civil.component';
     NavbarComponent,
     CseComponent,
     ITComponent,
-    CivilComponent
+    CivilComponent,
+    RegistrationComponent,
+    ShowdataComponent,
+    AmanComponent,
+ 
+    
+    
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
-{path:'about', component: AboutComponent},
+{path:'', component: AboutComponent},
 {path:'contact', component: ContactComponent},
 {path:'department', component: DepartmentComponent},
 {path:'news', component: NewsComponent},
 {path:'cse', component: CseComponent},
 {path:'IT', component: ITComponent},
 {path:'civil', component: CivilComponent},
+{path:'showdata', component: ShowdataComponent},
+{path:'registration', component: RegistrationComponent},
     ])
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
