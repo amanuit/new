@@ -19,7 +19,6 @@ form={
   12:"",
   department:"",
   hobbies:"",
-  sex:"",
 
 }
   constructor(private formservice:DataService) {
