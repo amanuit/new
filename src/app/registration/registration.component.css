@@ -13,10 +13,10 @@ input, select{
 }
 
 input[type='Submit'] :hover {
- background: #b0dcff;
+ background: red;
 }
 
 input[type='Submit'] :disabled {
-    background: #d5d6d6;
+    background: purple;
 }
    
