@@ -11,3 +11,12 @@ input, select{
     margin: 5px 0px;
     color:purple;
 }
+
+input[type='Submit'] :hover {
+ background: #b0dcff;
+}
+
+input[type='Submit'] :disabled {
+    background: #d5d6d6;
+}
+   
